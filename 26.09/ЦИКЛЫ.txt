@@ -1,0 +1,62 @@
+1)
+
+double x = double.Parse(Console.ReadLine());
+double y = 10;
+double p = x;
+int i = 9;
+
+while(i > 0)
+{
+    y = y + i * p;
+    p = p * x;
+    i--;
+}
+Console.WriteLine($"ответ : {y}");
+
+2)
+
+double x = double.Parse(Console.ReadLine());
+double y = 0;
+double p = x;
+int i = 10;
+
+while(i > 0)
+{
+    y = Math.Cos(p) + y;
+    p = p * x;
+    i--;
+}
+Console.WriteLine($"ответ : {y}");
+
+3)
+
+double x = double.Parse(Console.ReadLine());
+double y = 0;
+double p = x;
+double s = Math.Sin(p);
+int i = 10;
+
+while(i > 0)
+{
+    y = s + y;
+    s = Math.Sin(s);
+    p = p * x;
+    i--;
+}
+Console.WriteLine($"ответ : {y}");
+
+4)
+
+double x = double.Parse(Console.ReadLine());
+double y = 0;
+double p = 99;
+double k = Math.Sqrt(p);
+
+while(p > 0)
+{
+    y = Math.Sqrt(k + y);
+    k = Math.Sqrt(k);
+    p = p - 3;
+}
+Console.WriteLine($"ответ : {y}");
+

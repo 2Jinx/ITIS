@@ -1,0 +1,207 @@
+1)ПЕШКА
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int numberA, numberB;
+        char chA, chB;
+        
+        Console.WriteLine("введите 1 ход");
+        chA = char.Parse(Console.ReadLine());
+        numberA = int.Parse(Console.ReadLine());
+        
+        Console.WriteLine("введите 2 ход");
+        chB = char.Parse(Console.ReadLine());
+        numberB = int.Parse(Console.ReadLine());
+        
+        Console.WriteLine($"{chA} {numberA}");
+        
+        Console.WriteLine($"{chB} {numberB}");
+        
+        if((chA == chB) && (numberB > numberA))
+        {
+            if((numberA < 4) && (numberB <= 4))
+            {
+                if(((numberB - numberA) <= 2) && ((numberB - numberA) > 0))
+                {
+                    Console.WriteLine("хороший ход");
+                }
+                else
+                {
+                    Console.WriteLine("переделывай");
+                }
+                
+            }
+            else
+            {
+                if((numberB - numberA) == 1)
+                {
+                    Console.WriteLine("хороший ход");
+                }
+                else
+                {
+                    Console.WriteLine("переделывай");
+                }
+            }
+        }
+        else
+        {
+            Console.WriteLine("переделывай");
+        }
+    }
+}
+
+2)СЛОН
+
+int numberA, numberB;
+char chA, chB;
+
+Console.WriteLine("введите 1 ход");
+chA = char.Parse(Console.ReadLine());
+numberA = int.Parse(Console.ReadLine());
+
+Console.WriteLine("введите 2 ход");
+chB = char.Parse(Console.ReadLine());
+numberB = int.Parse(Console.ReadLine());
+
+if(Math.Abs(numberA - numberB) == Math.Abs(chA - chB))
+{
+    Console.WriteLine("хороший ход");
+}
+else
+{
+    Console.WriteLine("переделывай");
+}
+
+3)ФЕРЗЬ
+
+int numberA, numberB;
+char chA, chB;
+
+Console.WriteLine("введите 1 ход");
+chA = char.Parse(Console.ReadLine());
+numberA = int.Parse(Console.ReadLine());
+
+Console.WriteLine("введите 2 ход");
+chB = char.Parse(Console.ReadLine());
+numberB = int.Parse(Console.ReadLine());
+
+if(Math.Abs(numberA - numberB) == Math.Abs(chA - chB))
+{
+    Console.WriteLine("хороший ход");
+}
+else
+{
+    if((chA == chB) || (numberA == numberB))
+    {
+        if(numberA > 0 && numberA <= 10 && numberB > 0 && numberB <= 10)
+        {
+            Console.WriteLine("хороший ход");
+        }
+        else
+        {
+            Console.WriteLine("переделывай");
+        }
+    }
+    else
+    {
+        Console.WriteLine("переделывай");
+    }
+}
+
+4)КОРОЛЬ
+
+int numberA, numberB;
+char chA, chB;
+
+Console.WriteLine("введите 1 ход");
+chA = char.Parse(Console.ReadLine());
+numberA = int.Parse(Console.ReadLine());
+
+Console.WriteLine("введите 2 ход");
+chB = char.Parse(Console.ReadLine());
+numberB = int.Parse(Console.ReadLine());
+
+if((Math.Abs(numberA - numberB) == Math.Abs(chA - chB)) && (Math.Abs(numberA - numberB) == 1) && (Math.Abs(chA - chB) == 1))
+{
+    Console.WriteLine("хороший ход");
+}
+else
+{
+    if(((chA == chB) || (numberA == numberB)) && (Math.Abs(numberA - numberB) == 1) || (Math.Abs(chA - chB) == 1))
+    {
+        if(numberA > 0 && numberA <= 8 && numberB > 0 && numberB <= 8)
+        {
+            Console.WriteLine("хороший ход");
+        }
+        else
+        {
+            Console.WriteLine("переделывай");
+        }
+    }
+    else
+    {
+        Console.WriteLine("переделывай");
+    }
+}
+
+5)ЛОДЬЯ
+
+int numberA, numberB;
+char chA, chB;
+
+Console.WriteLine("введите 1 ход");
+chA = char.Parse(Console.ReadLine());
+numberA = int.Parse(Console.ReadLine());
+
+Console.WriteLine("введите 2 ход");
+chB = char.Parse(Console.ReadLine());
+numberB = int.Parse(Console.ReadLine());
+
+if (numberA > 0 && numberA <= 8 && numberB > 0 && numberB <= 8 && ((numberA == numberB) || (chA == chB)))
+{
+    Console.WriteLine("хороший ход");
+}
+else
+{
+    Console.WriteLine("переделывай");
+}
+
+6)КОНЬ
+
+int numberA, numberB;
+char chA, chB;
+
+Console.WriteLine("введите 1 ход");
+chA = char.Parse(Console.ReadLine());
+numberA = int.Parse(Console.ReadLine());
+
+Console.WriteLine("введите 2 ход");
+chB = char.Parse(Console.ReadLine());
+numberB = int.Parse(Console.ReadLine());
+
+if(Math.Abs(numberA - numberB) == 2)
+{
+    if(Math.Abs(chA - chB) == 1)
+    {
+        Console.WriteLine("хороший ход");
+    }
+    else
+    {
+        Console.WriteLine("переделывай");
+    }
+}
+if(Math.Abs(chA - chB) == 2)
+{
+    if(Math.Abs(numberA - numberB) == 1)
+    {
+        Console.WriteLine("хороший ход");
+    }
+    else
+    {
+        Console.WriteLine("переделывай");
+    }
+}
+    

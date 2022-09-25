@@ -1,0 +1,39 @@
+1)КОЛИЧЕСТВО ЦИФР В ЧИСЛЕ
+
+double a, count;
+
+count = 0;
+Console.WriteLine("введите число : ");
+a = double.Parse(Console.ReadLine());
+while(a > 1)
+{
+    a = a / 10;
+    count++;
+}
+Console.WriteLine($"всего цифр в числе :{count} ");
+
+2)ЯВЛЯЕТСЯ ЛИ ЧИСЛО СТЕПЕНЬЮ 2
+
+double a;
+
+Console.WriteLine("введите число : ");
+a = double.Parse(Console.ReadLine());
+while(a > 1)
+{
+    if(a % 2 == 0)
+    {
+        a = a / 2;
+    }
+    else
+    {
+        break;
+    }
+}
+if(a == 1)
+{
+    Console.WriteLine("число является степенью 2");
+}
+else
+{
+    Console.WriteLine("число не является степенью 2");
+}
