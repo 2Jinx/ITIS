@@ -47,16 +47,21 @@ Console.WriteLine($"ответ : {y}");
 
 4)
 
-double x = double.Parse(Console.ReadLine());
-double y = 0;
-double p = 99;
-double k = Math.Sqrt(p);
+using System;
 
-while(p > 0)
+public class HelloWorld
 {
-    y = Math.Sqrt(k + y);
-    k = Math.Sqrt(k);
-    p = p - 3;
+    public static void Main(string[] args)
+    {
+        double p = 99;
+        double y = Math.Sqrt(p);
+
+        while(p > 0)
+        {
+             y = Math.Sqrt(p + y);
+             p = p - 3;
+        }
+        Console.WriteLine($"ответ : {y}");
+    }
 }
-Console.WriteLine($"ответ : {y}");
 
