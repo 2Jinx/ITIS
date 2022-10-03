@@ -1,0 +1,35 @@
+using System;
+
+
+// G = 0.915 965 594 177 219 015 054 603 514 932 384 110 774 ...
+
+static double Catalan(double n)
+{
+    if(n == 1)
+    {
+        return (Math.Pow(-1, n)) / (Math.Pow((2 * n + 1), 2));
+    }
+    if(n > 1)
+    {
+        return (Math.Pow(-1, n)) / (Math.Pow((2 * n + 1), 2)) + (Catalan(n - 1));
+    }
+    else
+    {
+        return (Math.Pow(-1, n)) / (Math.Pow((2 * n + 1), 2)) + (Catalan(n + 1));
+    }
+    
+}
+Console.WriteLine(Catalan(2));
+Console.WriteLine(Catalan(5));
+
+////double G = 0.915965594177219015054603514932384110774;
+//Console.WriteLine("введите значение G : ");
+//double G = double.Parse(Console.ReadLine());
+
+//int k = 0;
+
+//while ((Catalan(k)) != G)
+//{
+//    k++;
+//}
+//Console.WriteLine($"n = {k}");
