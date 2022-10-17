@@ -1,0 +1,30 @@
+//2 вариант посчитать количество элементов, которые больше соседей
+
+int n = 8;
+Random r = new Random();
+int[] arr = new int[n];
+int counter = 0;
+
+for (int i = 0; i < n; i++)             //массив с рандомными значениями от 10,20
+    arr[i] = r.Next(10, 21);
+
+for (int i = 0; i < n; i++)
+    Console.Write($" {arr[i]}, ");
+Console.WriteLine();
+for (int i = 1; i < n - 1; i++)
+{
+    if ((arr[i] > arr[i - 1]) && (arr[i] > arr[i + 1]))
+    {
+        counter++;
+        Console.WriteLine($"элемент  {arr[i]}, индекс {i + 1}");
+    }
+}
+
+if(counter > 0)
+{
+    Console.WriteLine($"количество элементов {counter}");
+}
+else
+{
+    Console.WriteLine("таких элементов нету");
+}
