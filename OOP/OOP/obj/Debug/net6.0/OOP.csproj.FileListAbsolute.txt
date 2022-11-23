@@ -1,0 +1,15 @@
+/Users/jinx/Projects/OOP/OOP/bin/Debug/net6.0/OOP
+/Users/jinx/Projects/OOP/OOP/bin/Debug/net6.0/OOP.deps.json
+/Users/jinx/Projects/OOP/OOP/bin/Debug/net6.0/OOP.runtimeconfig.json
+/Users/jinx/Projects/OOP/OOP/bin/Debug/net6.0/OOP.dll
+/Users/jinx/Projects/OOP/OOP/bin/Debug/net6.0/OOP.pdb
+/Users/jinx/Projects/OOP/OOP/obj/Debug/net6.0/OOP.csproj.AssemblyReference.cache
+/Users/jinx/Projects/OOP/OOP/obj/Debug/net6.0/OOP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jinx/Projects/OOP/OOP/obj/Debug/net6.0/OOP.AssemblyInfoInputs.cache
+/Users/jinx/Projects/OOP/OOP/obj/Debug/net6.0/OOP.AssemblyInfo.cs
+/Users/jinx/Projects/OOP/OOP/obj/Debug/net6.0/OOP.csproj.CoreCompileInputs.cache
+/Users/jinx/Projects/OOP/OOP/obj/Debug/net6.0/OOP.dll
+/Users/jinx/Projects/OOP/OOP/obj/Debug/net6.0/refint/OOP.dll
+/Users/jinx/Projects/OOP/OOP/obj/Debug/net6.0/OOP.pdb
+/Users/jinx/Projects/OOP/OOP/obj/Debug/net6.0/OOP.genruntimeconfig.cache
+/Users/jinx/Projects/OOP/OOP/obj/Debug/net6.0/ref/OOP.dll
