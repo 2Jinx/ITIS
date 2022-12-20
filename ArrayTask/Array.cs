@@ -9,17 +9,22 @@ namespace ArrayTask
 
 		public Array(int n, int m)
 		{
+			if (n < 1)
+                		throw new ArgumentException("количество строк должно быть больше 1");
+            		if (m < 1)
+                		throw new ArgumentException("количество столбцов должно быть больше 1");
+			
 			countLines = n;
 			countColumns = m;
-            Matrix = new int[countColumns, countLines];
+            		Matrix = new int[countColumns, countLines];
 			for (int i = 0; i < n; i++)
 				for (int j = 0; j < m; j++)
 					Matrix[i, j] = 0;
 		}
 
-		public Array() : this(1, 1)
-		{
-            Matrix[1, 1] = 0;
+	public Array() : this(1, 1)
+	{
+            	Matrix[1, 1] = 0;
         }
         
         public void PrintMatrix()
