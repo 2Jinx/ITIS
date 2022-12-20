@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace ArrayTask
 {
 	public class Array
@@ -9,22 +9,22 @@ namespace ArrayTask
 
 		public Array(int n, int m)
 		{
-			if (n < 1)
-                		throw new ArgumentException("количество строк должно быть больше 1");
-            		if (m < 1)
-                		throw new ArgumentException("количество столбцов должно быть больше 1");
-			
-			countLines = n;
+            if (n < 1)
+                throw new ArgumentException("количество строк должно быть больше 1");
+            if (m < 1)
+                throw new ArgumentException("количество столбцов должно быть больше 1");
+
+            countLines = n;
 			countColumns = m;
-            		Matrix = new int[countColumns, countLines];
+            Matrix = new int[countColumns, countLines];
 			for (int i = 0; i < n; i++)
 				for (int j = 0; j < m; j++)
 					Matrix[i, j] = 0;
 		}
 
-	public Array() : this(1, 1)
-	{
-            	Matrix[1, 1] = 0;
+		public Array() : this(1, 1)
+		{
+            Matrix[1, 1] = 0;
         }
         
         public void PrintMatrix()
@@ -38,7 +38,7 @@ namespace ArrayTask
             }
         }
 
-        public void SaveMatrixInFile(int[,] matrix, string file)
+        public void SaveMatrixInFile(string file)
         {
 
             using (StreamWriter saver = new StreamWriter(file))
@@ -46,7 +46,7 @@ namespace ArrayTask
                 for (int i = 0; i < countColumns; i++)
                 {
                     for (int j = 0; j < countColumns; j++)
-                        saver.Write("{0} ", matrix[i, j]);
+                        saver.Write("{0} ", Matrix[i, j]);
                     saver.WriteLine();
                 }
             }
