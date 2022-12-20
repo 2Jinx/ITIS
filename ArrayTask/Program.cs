@@ -18,7 +18,6 @@ public class Program
             b.GenerateRandomMatrix();
             c = a * b;
             d = a - b;
-            
             Console.WriteLine();
             a.PrintMatrix();
             Console.WriteLine();
