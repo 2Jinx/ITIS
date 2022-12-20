@@ -21,7 +21,6 @@ public class Program
             
             Console.WriteLine();
             a.PrintMatrix();
-            a.SaveMatrixInFile(matr,"Matrix.txt");
             Console.WriteLine();
             b.PrintMatrix();
             Console.WriteLine();
