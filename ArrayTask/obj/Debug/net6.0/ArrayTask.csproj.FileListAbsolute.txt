@@ -1,0 +1,15 @@
+/Users/jinx/Projects/ArrayTask/ArrayTask/bin/Debug/net6.0/ArrayTask
+/Users/jinx/Projects/ArrayTask/ArrayTask/bin/Debug/net6.0/ArrayTask.deps.json
+/Users/jinx/Projects/ArrayTask/ArrayTask/bin/Debug/net6.0/ArrayTask.runtimeconfig.json
+/Users/jinx/Projects/ArrayTask/ArrayTask/bin/Debug/net6.0/ArrayTask.dll
+/Users/jinx/Projects/ArrayTask/ArrayTask/bin/Debug/net6.0/ArrayTask.pdb
+/Users/jinx/Projects/ArrayTask/ArrayTask/obj/Debug/net6.0/ArrayTask.csproj.AssemblyReference.cache
+/Users/jinx/Projects/ArrayTask/ArrayTask/obj/Debug/net6.0/ArrayTask.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jinx/Projects/ArrayTask/ArrayTask/obj/Debug/net6.0/ArrayTask.AssemblyInfoInputs.cache
+/Users/jinx/Projects/ArrayTask/ArrayTask/obj/Debug/net6.0/ArrayTask.AssemblyInfo.cs
+/Users/jinx/Projects/ArrayTask/ArrayTask/obj/Debug/net6.0/ArrayTask.csproj.CoreCompileInputs.cache
+/Users/jinx/Projects/ArrayTask/ArrayTask/obj/Debug/net6.0/ArrayTask.dll
+/Users/jinx/Projects/ArrayTask/ArrayTask/obj/Debug/net6.0/refint/ArrayTask.dll
+/Users/jinx/Projects/ArrayTask/ArrayTask/obj/Debug/net6.0/ArrayTask.pdb
+/Users/jinx/Projects/ArrayTask/ArrayTask/obj/Debug/net6.0/ArrayTask.genruntimeconfig.cache
+/Users/jinx/Projects/ArrayTask/ArrayTask/obj/Debug/net6.0/ref/ArrayTask.dll
